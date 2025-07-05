@@ -1,0 +1,235 @@
+
+
+
+.main {
+
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 92px;
+
+        &-left {
+            width: 400px;
+            height: 300px;
+            border-radius: 20px;
+            box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+            background: #4f4f4f;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+
+        }
+
+        &-right {
+            border-radius: 20px;
+            width: 750px;
+            height: 300px;
+            box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+            background: #4f4f4f;
+            position: relative;
+        }
+
+
+    }
+
+    &__left {
+        &-temp {
+            display: flex;
+            flex-direction: column;
+            
+            text-align: left;
+        }
+
+        &-icon {
+
+            &Img {
+                 width: 119px;
+                height: 119px;
+                
+            }
+
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            column-gap: 70px;
+            padding-top: 20px;
+        }
+
+        &-details {
+            display: flex;
+            flex-direction: column;
+            row-gap: 14px;
+            padding: 20px;
+        }
+
+        &-degree {
+            font-weight: 500;
+            font-size: 96px;
+            color: #4793ff;
+            font-family: 'MM';
+        }
+
+        &-data {
+            font-weight: 400;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        &-time,
+        &-city {
+            font-weight: 400;
+            font-size: 25px;
+            color: #939cb0;
+        }
+    }
+
+
+    &__right {
+        &-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            object-fit: cover;
+        }
+
+        &-info {
+            width: 60%;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 24px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+
+            gap: 26px;
+
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 14px;
+            color: #939cb0;
+            min-width: 96px;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 14px;
+            color: #fff;
+            white-space: nowrap;
+        }
+
+        &-img {
+            border-radius: 100%;
+            background: #fff;
+            box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+            padding: 7px;
+            object-fit: cover;
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    &__weather {
+        border-radius: 20px;
+        box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+        background: #4f4f4f;
+        width: 1290px;
+        height: 240px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        &-img {
+            margin: 11px 0;
+            width: 36px;
+            height: 36px;
+        }
+
+        &-item {
+            border-radius: 10px;
+            background: #2e3035;
+            width: 149px;
+            height: 200px;
+            padding: 11px;
+
+        }
+
+        &-top {
+            display: flex;
+            flex-direction: column;
+            row-gap: 7px;
+        }
+    }
+
+    &__top {
+        &-data {
+            font-weight: 500;
+            font-size: 18px;
+            color: #fff;
+            font-family: 'MM';
+        }
+
+        &-num {
+            font-weight: 400;
+            font-size: 14px;
+            color: #939cb0;
+        }
+    }
+
+    &__down {
+        display: flex;
+        flex-direction: column;
+        row-gap: 7px;
+
+        &-degree {
+            font-weight: 500;
+            font-size: 18px;
+            color: #fff;
+            font-family: 'MM';
+        }
+
+        &-shade {
+            font-weight: 400;
+            font-size: 13px;
+            color: #939cb0;
+        }
+
+        &-cloud {
+            font-weight: 400;
+            font-size: 13px;
+            color: #939cb0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.4s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-to, .fade-leave-from {
+  opacity: 1;
+}

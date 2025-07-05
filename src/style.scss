@@ -1,0 +1,62 @@
+@use '@/assets/style/fonts.scss';
+@use '@/assets/style/header.scss';
+@use '@/assets/style/main.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+body.dark{
+  background: #0d1117;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "MR";
+}
+
+body.light{
+  background: #fff;
+  color: #000;
+  font-family: "MR";
+  .header__nav-select{
+    background: rgba(71, 147, 255, 0.2);
+    color: #000;
+    
+  }
+  .main__box-left, .main__box-right{
+    background: #FFF;
+  }
+  .main__left-data, 
+  .main__top-data, 
+  .main__right-text,
+  .main__down-degree{
+    color: #000;
+  }
+  .main__right-bg{
+    display: none;
+  }
+
+  .main__weather{
+    background: #FFF;
+  }
+  .main__weather-item{
+    background: rgba(71, 147, 255, 0.2);
+  }
+  .header__nav-send img {
+  filter: brightness(20%); // чёрная
+  }
+}
