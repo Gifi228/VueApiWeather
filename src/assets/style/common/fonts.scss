@@ -1,0 +1,14 @@
+$Montserrat: (
+  'Regular': 400,
+  'Medium': 500,
+  'Bold': 700
+);
+
+// Автоматическое создание @font-face для каждого шрифта
+@each $name, $weight in $Montserrat {
+  @font-face {
+    font-family: 'Montserrat';
+    src: url(@/assets/fonts/Montserrat-#{$name}.ttf) ;
+    font-weight: $weight;
+  }
+}

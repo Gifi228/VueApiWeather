@@ -1,6 +1,3 @@
-// Dark theme
-
-
 .header{
     padding: 20px 0;
     &__nav{
@@ -26,7 +23,7 @@
             font-size: 25px;
             text-transform: uppercase;
             color: #4793ff;
-            font-family: 'MB';
+            font-family: 'Montserrat';
         }
         &-select{
             border-radius: 10px;
@@ -38,7 +35,7 @@
             display: flex;
             outline: none;
             border: none;
-            font-family: 'MM';
+            font-family: 'Montserrat';
             
         }
         &-send{
@@ -56,64 +53,3 @@
     }
     
 }
-
-
-
-// Light theme
-
-.header{
-    padding: 20px 0;
-    &__nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-        &-left, &-right{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            position: relative;
-        }
-        &-switch{
-            background: black;
-            outline: none;
-            background: none;
-            border: none;
-        }
-        &-title{
-            font-weight: 700;
-            font-size: 25px;
-            text-transform: uppercase;
-            color: #4793ff;
-            font-family: 'MB';
-        }
-        &-select{
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: 500;    
-            background: #4f4f4f;
-            color: #FFFFFF;
-            padding: 9px 20px;
-            display: flex;
-            outline: none;
-            border: none;
-            font-family: 'MM';
-        }
-        &-send{
-            width: 38px;
-            height: 40px;
-            display: flex;
-            position: absolute;
-            top: -1px;
-            right: 10px;
-            outline: none;
-            border: none;
-            background: none;
-            fill: #fff;
-        }
-    }
-    
-}
-
-

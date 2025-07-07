@@ -1,0 +1,15 @@
+$xl: 1320px;
+$lg: 1140px;
+$md: 992px;
+$sm: 768px;
+$xs: 576px;
+$gutters: 30px;
+$gutters-side: calc($gutters / 2);
+
+
+@mixin container($padding: $gutters-side) {
+    max-width: $xl;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $padding;
+}

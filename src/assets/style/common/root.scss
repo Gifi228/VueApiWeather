@@ -1,0 +1,57 @@
+@use 'grid.scss' as *;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  @include container();
+}
+
+body.dark{
+  background: #0d1117;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: "Montserrat";
+}
+
+body.light{
+  background: #fff;
+  color: #000;
+  font-family: "Montserrat";
+  .header__nav-select{
+    background: rgba(71, 147, 255, 0.2);
+    color: #000;
+    
+  }
+  .main__box-left, .main__box-right{
+    background: #FFF;
+  }
+  .main__left-data, 
+  .main__top-data, 
+  .main__right-text,
+  .main__down-degree{
+    color: #000;
+  }
+  .main__right-bg{
+    display: none;
+  }
+
+  .main__weather{
+    background: #FFF;
+  }
+  .main__weather-item{
+    background: rgba(71, 147, 255, 0.2);
+  }
+  .header__nav-send img {
+  filter: brightness(20%); // чёрная
+  }
+}
